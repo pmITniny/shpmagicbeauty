@@ -1,0 +1,276 @@
+#ListaProizvoda{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Pretraga{
+    background-color: white;
+    width:600px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+select{
+    margin-bottom: 10px;
+}
+
+#Pretraga div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#Kriterijumi label:last-of-type{
+    margin-top: 10px;
+}
+
+.Proizvod{
+    background-color: white;
+    border: 1px black solid;
+    width: 300px;
+    min-height: 350px;
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Slika{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.SrednjiDeo{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    height: 110px;
+    padding-bottom: 10px;
+}
+
+.Naslov{
+    display: flex;
+    justify-content: center;
+}
+
+.Opis{
+    word-wrap: break-word;
+}
+
+.SlikaProizvoda{
+    width: 200px ;
+    height: 200px;
+}
+
+.Sakriveno{
+    display: none !important;
+}
+
+.btnDodajUKorpu{
+    width: 70%;
+    margin:10px;
+}
+
+.dugmeKorpa{
+    display: flex;
+    justify-content: center;
+}
+
+.ProcitajVise.SakrijOpis + .Opis{
+    display: none;
+}
+
+.ProcitajVise{
+    font-style: italic;
+    text-decoration: underline;
+    color: indigo;
+    cursor: pointer;
+}
+
+#Naziv, #Cena{
+    width:240px;
+}
+
+/*fixed korpa-------------------------------------------------------------------*/
+
+#Korpa{
+    position: fixed;
+    right: 0;
+    border: 1px solid grey;
+    border-radius: 30px;
+    top: 150px;
+    background-color: white;
+    width: 110px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+#Korpa img{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+}
+
+#PregledajKorpu{
+    width:70px;
+    height: 30px;
+    font-size: 10px;
+}
+
+
+/*korpa-----------------------------------*/
+
+#kontejnerKorpa{
+    background-color: rgba(248, 241, 244, 0.34);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#prozorKorpa{
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    border: 1px solid black;
+    overflow: auto;
+}
+
+#ZaglavljeKorpe{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    background-color: #ff8095;
+}
+
+#VrednostKolicinaKorpe{
+    border-bottom: 1px solid grey;
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+
+#VrednostKolicinaKorpe p{
+    width: 50%;
+    padding: 15px;
+}
+
+#ZaglavljeKorpe p{
+    flex-grow: 1;
+    text-align: center;
+}
+
+#ZaglavljeKorpe img{
+    width: auto;
+    height: 30px;
+    cursor: pointer;
+}
+
+#ListaProizKorpa{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ProizvodiUKorpi{
+    width: 770px;
+    min-height: 50px;
+    margin: 3px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #fbf4f4;
+}
+
+
+.ProizvodiUKorpi img{
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    margin-right: 5px;
+    margin-left: 15px;
+}
+
+.NazivProizKorpa{
+    width: 480px;
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+.IzbaciKorpa{
+    width: 60px;
+    margin: 3px;
+}
+
+.CenaProizKorpa{
+    width: 60;
+    border-left: 1px solid grey;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    background-color: #fbf4f4;
+}
+
+.KolicinaProizKorpa{
+    width: 100px;
+    border-left: 1px solid grey;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fbf4f4;
+}
+
+#Dugmad{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#DugmePoruci{
+    height: 60px;
+    margin: 10px;
+    width: 120px;
+    cursor: pointer;
+}
+
+#DugmePoruci a{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="proizvodistyle.css">
+    <title>Proizvodi</title>
+</head>
+<body>
+    <header>
+        <div id="Header">
+            <div id="Logo">
+                <img src="slike/logo.png" alt="">
+
+            </div>
+            <div id="navigacija">
+                <ul>
+                   
+                  
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    
+    <main>
+        <div id="Pretraga">
+            <div>
+                <h2>Pretraži proizvod:</h2>
+            </div>
+            <div>
+                <label>Pretraži prema nazivu proizvoda:</label>
+                <input id="Naziv" type="search">
+                <!--<label>Izaberite brend:</label>
+                <select id="Brend" name="Brend">
+                    <option value="Izaberite">Izaberite</option>
+                    <option value="Aura">Aura</option>
+                    <option value="Catrice">Catrice</option>     
+                    <option value="L'Oreal Paris">L'Oreal Paris</option>     
+                </select>
+            -->
+            </div>
+            <button id="Pretrazi">Pretraži</button>
+            <div id="SortFilt">
+                <label>Sortiraj po ceni:</label>
+                <select id="Cena">
+                    <option value="Izaberite">Izaberite</option>
+                    <option value="Opadajuce">Opadajuće</option>
+                    <option value="Rastuce">Rastuće</option>          
+                </select>
+                <label>Filtriraj po kategoriji:</label>
+                <select id="Kategorija">
+                    <option value="">Sve kategorije</option>
+                    <option value="Karmin">Karmin</option>
+                    <option value="Puder">Puder</option>
+                    <option value="Senka">Senka za oči</option>
+                </select>
+            </div>
+        
+        
+
+        </div>
+        
+        <div id="ListaProizvoda">
+            
+            <!-- <div class="Proizvod">
+                <div class="Slika">
+                    <img src="https://static.siberianhealth.com/public/projects/shopen/images/41/_resize/416773_300_537e5e35_fit_300_300.png" width="200px" height="200px">
+                </div>
+                <div class="DonjiDeo">
+                    <div class="Naslov">
+                        <h3>Karmin bla bla</h3>
+                    </div>
+                    <div class="Cena">
+                        <p>Cena: 500 din</p>
+                        <p>Pročitaj više</p>
+                    </div>
+                </div>
+                <div class="Opis">
+                    <p>Opssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss bla bla bla nlsaaa fefnejfe nfjenfienfjen</p>
+                </div>
+            </div>
+            <div class="Proizvod">
+                <div class="Slika">
+                    <img src="https://static.siberianhealth.com/public/projects/shopen/images/41/_resize/416773_300_537e5e35_fit_300_300.png" width="200px" height="200px">
+                </div>
+                <div class="DonjiDeo">
+                    <div class="Naslov">
+                        <h3>Karmin bla bla</h3>
+                    </div>
+                    <div class="Cena">
+                        <p>Cena: 500 din</p>
+                        <p>Pročitaj više</p>
+                    </div>
+                </div>
+                <div class="Opis">
+                    <p>Opssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss bla bla bla nlsaaa fefnejfe nfjenfienfjen</p>
+                </div>
+            </div>
+            <div class="Proizvod">
+                <div class="Slika">
+                    <img src="https://static.siberianhealth.com/public/projects/shopen/images/41/_resize/416773_300_537e5e35_fit_300_300.png" width="200px" height="200px">
+                </div>
+                <div class="DonjiDeo">
+                    <div class="Naslov">
+                        <h3>Karmin bla bla</h3>
+                    </div>
+                    <div class="Cena">
+                        <p>Cena: 500 din</p>
+                        <p>Pročitaj više</p>
+                    </div>
+                </div>
+                <div class="Opis">
+                    <p>Opssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss bla bla bla nlsaaa fefnejfe nfjenfienfjen</p>
+                </div>
+            </div>
+            <div class="Proizvod">
+                <div class="Slika">
+                    <img src="https://static.siberianhealth.com/public/projects/shopen/images/41/_resize/416773_300_537e5e35_fit_300_300.png" width="200px" height="200px">
+                </div>
+                <div class="DonjiDeo">
+                    <div class="Naslov">
+                        <h3>Karmin bla bla</h3>
+                    </div>
+                    <div class="Cena">
+                        <p>Cena: 500 din</p>
+                        <p>Pročitaj više</p>
+                    </div>
+                </div>
+                <div class="Opis">
+                    <p>Opssssssssssssssssssssssssssssss     ffffffvfdfdkshskh jfldsnhhjldsvnjlds kfjdlkfjeksejmffffffff dddddddddd ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss bla bla bla nlsaaa fefnejfe nfjenfienfjen</p>
+                </div>
+            </div>
+            <div class="Proizvod">
+                <div class="Slika">
+                    <img class="SlikaProizvoda" src="https://static.siberianhealth.com/public/projects/shopen/images/41/_resize/416773_300_537e5e35_fit_300_300.png" width="200px" height="200px">
+                </div>
+                <div class="DonjiDeo">
+                    <div class="Naslov">
+                        <h3>Karmin bla bla</h3>
+                    </div>
+                    <div class="Cena">
+                        <p>Cena: 500 din</p>
+                        <p>Pročitaj više</p>
+                    </div>
+                </div>
+                <div class="Opis">
+                    <p>Opssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss bla bla bla nlsaaa fefnejfe nfjenfienfjen</p>
+                </div>
+            </div> -->
+
+
+
+
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        <div id="Korpa">
+            <img src="slike/korpa.png">
+            <p id="BrojProizKorpa">Broj proizvoda: 0</p>
+            <button id="PregledajKorpu">Pregledaj korpu</button>
+        </div>
+            
+
+    </main>
+    
+    
+
+    <div id="kontejnerKorpa" class="Sakriveno">
+        <div id="prozorKorpa">
+            <div id="ZaglavljeKorpe">
+                <p>PREGLED KORPE</p>
+                <img id="ZatvoriKorpu" src="slike/zatvori.png">
+            </div>
+            <div id="VrednostKolicinaKorpe">
+                <p id="VrednostKorpe">Vrednost korpe: </p>
+                <p id="KolicinaKorpe">Količina proizvoda: </p>
+            </div>
+            <div id="ListaProizKorpa">
+                
+                <!--
+                <div class="ProizvodiUKorpi">
+                    <img src="slike/karmin10catrice.webp">
+                    <div class="NazivProizKorpa"><p>Ruž za usne bla bla bla usne  usne bla bla bla usne bla bla bla usne bla bla bla usne bla bla bla bla bla bla usne bla bla bla usne bla bla bla</p></div>
+                    <div class="CenaProizKorpa"><p>Cena: 700 din</p></div>
+                    <div class="KolicinaProizKorpa"><p>Količina: 1</p></div>
+                    <button class="IzbaciKorpa">Izbaci proizvod</button>
+                </div>-->
+
+
+            </div>
+            <div id="Dugmad">
+                <a href="poruci.html"><button id="DugmePoruci">Poruči proizvode</button></a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <footer>
+        <div id="Footer">
+            <div id="FooterOnama">
+                <h3>Radno vreme</h3>
+                <p>Ponedeljak 08-20h <br> Utorak 08-20h <br> Sreda 08-20h <br> Četvrtak 08-20h <br> Petak 08-20h <br>
+                    Subota 08-15h <br> Nedelja 08-12h  </p>
+            </div>
+            <div id="FooterKontakt">
+                <div>
+                    <h3>Kontakt</h3>
+                    <p>Za dodatne informacije i pitanja, kontaktirajte nas putem:<br />
+                </div>
+                    <div id="FooterKontatkDonji">
+                    <div id="FooterKontaktLevi">
+                        <p>E-mail:</p>
+                        <p>Broj telefona:</p>
+                        <p>Adresa:</p> <br>
+                        <p> <a href="https://www.instagram.com/ninaa_mandic/"><img src="slike/instagram.ico" alt=""  width="29" height="29"></a> &nbsp
+                            <a href="https://www.facebook.com/nina.mandic.7"><img src="slike/fb.png" alt=""  width="29" height="29">  &nbsp
+                            <a href="https://www.youtube.com/"><img src="slike/youtube.png" alt=""  width="29" height="29">
+                            </p>
+                        <!-- <p>Instagram:</p> -->
+                    </div>
+                    <div id="FooterKontaktDesni">
+                        <p><a href="ninaamandic1411@gmail.com">magicbeauty@gmail.com</a></p>
+                        <p><a href="+3816545307">0615545307</a></p>
+                        <p>Đure Đakovića 1, Subotica</p>
+                        
+                        <!-- <p>https://www.facebook.com/Magic-Beauty-100488549353743</p>
+                        <p>https://www.instagram.com/magic.beauty.shop2022/</p> -->
+                    </div>        
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/podaci.js"></script>
+    <script src="scripts/pretraga.js"></script>
+
+
+
+</body>
+</html>
